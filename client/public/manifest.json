@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "GBOT",
+  "name": "Get Back On Track",
+  "description": "A fitness habit tracker that helps you get back on track with your fitness goals.",
   "icons": [
     {
       "src": "favicon.ico",
