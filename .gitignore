@@ -1,32 +1,29 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Root .gitignore
 
+# Dependencies
+/node_modules/
 
-# ==========================
-# Client/.gitignore
-# ==========================
+# Environment files
+.env
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
 
-# Editor directories
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
 .vscode/
 .idea/
+
+# Build outputs
+coverage/
+
+# Lock files (if you want to ignore other manager locks)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

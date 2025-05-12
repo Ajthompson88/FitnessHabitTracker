@@ -1,0 +1,22 @@
+# ==========================
+# Server/.gitignore
+# ==========================
+
+# Node dependencies
+/node_modules/
+
+# Build output
+/dist/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript cache
+*.tsbuildinfo
+
+# OS files
+.DS_Store
