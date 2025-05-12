@@ -161,40 +161,62 @@ Authorization: Bearer <JWT_TOKEN>
 ## Folder Structure
 
 ```
-/root
-├── server/
-│   ├── src/
-│   │   ├── config/
-│   │   │   └── connection.ts      # MongoDB Atlas connection
-│   │   ├── models/
-│   │   │   ├── User.ts
-│   │   │   ├── Habit.ts
-│   │   │   └── HabitLog.ts
-│   │   ├── graphql/
-│   │   │   ├── typeDefs.ts       # GraphQL schema definitions
-│   │   │   └── resolvers.ts      # Resolver implementations
-│   │   ├── utils/
-│   │   │   └── auth.ts           # JWT auth middleware
-│   │   └── index.ts              # Express + Apollo Server setup
-│   ├── .env                      # Env vars: MONGO_URI, JWT_SECRET
-│   └── package.json
-└── client/
-    ├── src/
-    │   ├── apollo/
-    │   │   └── client.ts         # Apollo Client initialization
-    │   ├── components/
-    │   │   ├── HabitList.tsx
-    │   │   ├── HabitForm.tsx
-    │   │   ├── LogForm.tsx
-    │   │   └── Dashboard.tsx
-    │   ├── pages/
-    │   │   ├── Home.tsx
-    │   │   ├── Login.tsx
-    │   │   └── Signup.tsx
-    │   ├── App.tsx
-    │   └── index.tsx
-    ├── .env                      # Env var: REACT_APP_GRAPHQL_URI
-    └── package.json
+/                     # Root of the project
+├── .gitignore
+├── LICENSE
+├── README.md
+├── client/           # React front-end
+│   ├── .env
+│   ├── .env.EXAMPLE
+│   ├── .gitignore
+│   ├── package.json
+│   ├── README.md
+│   ├── tsconfig.json
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   └── src/
+│       ├── App.css
+│       ├── App.test.tsx
+│       ├── App.tsx
+│       ├── index.css
+│       ├── index.tsx
+│       ├── logo.svg
+│       ├── react-app-env.d.ts
+│       ├── reportWebVitals.ts
+│       ├── setupTests.ts
+│       ├── apollo/
+│       │   └── client.ts
+│       ├── components/
+│       │   ├── Dashboard.tsx
+│       │   ├── HabitForm.tsx
+│       │   ├── HabitList.tsx
+│       │   └── LogForm.tsx
+│       └── pages/
+│           ├── Home.tsx
+│           ├── Login.tsx
+│           └── Signup.tsx
+├── server/           # GraphQL API back-end
+│   ├── .env
+│   ├── .env.EXAMPLE
+│   ├── .gitignore
+│   ├── package.json
+│   └── src/
+│       ├── index.ts
+│       ├── config/
+│       │   └── connection.ts
+│       ├── graphql/
+│       │   ├── resolvers.ts
+│       │   └── typeDefs.ts
+│       ├── models/
+│       │   ├── Habit.ts
+│       │   ├── HabitLog.ts
+│       │   └── User.ts
+│       └── utils/
 ```
 
 ## Environment Variables
